@@ -108,7 +108,7 @@
       const [currentRequestType, setCurrentRequestType] = useState('general inquiry');
       const messagesEndRef = useRef(null);
 
-      const CUSTOM_ENDPOINT = 'mock-endpoint'; // Replace with your actual endpoint
+      const CUSTOM_ENDPOINT = 'https://directed-tutoring-bot.onrender.com/api/assistant/chat/invoke'; // Replace with your actual endpoint
 
       useEffect(() => {
         if (isOpen && messages.length === 0) {
