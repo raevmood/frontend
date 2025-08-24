@@ -157,13 +157,15 @@
         try {
           // Custom POST request with your specified format
           const customPayload = {
-            user_id: "12345",
-            user_type: "student",
-            request_type: "tutoring",
-            subject: "",
-            query: currentInput,
-            auto_detect_topic: true,
-            difficulty_level: "intermediate"
+            input:{
+              user_id: "12345",
+              user_type: "student",
+              request_type: "tutoring",
+              subject: "",
+              query: currentInput,
+              auto_detect_topic: true,
+              difficulty_level: "intermediate"
+            }
           };
 
           const response = await fetch(CUSTOM_ENDPOINT, {
@@ -173,7 +175,7 @@
               // Add any authorization headers if needed
               // 'Authorization': `Bearer ${token}`
             },
-            body: customPayload
+            body: JSON,stringify(customPayload)
           });
 
           if (!response.ok) {
