@@ -159,7 +159,7 @@
           const customPayload = {
             user_id: "12345",
             user_type: "student",
-            request_type: requestType,
+            request_type: "tutoring",
             subject: "",
             query: currentInput,
             auto_detect_topic: true,
@@ -173,7 +173,7 @@
               // Add any authorization headers if needed
               // 'Authorization': `Bearer ${token}`
             },
-            body: JSON.stringify(customPayload)
+            body: customPayload
           });
 
           if (!response.ok) {
