@@ -161,9 +161,9 @@
             user_type: "student",
             request_type: requestType,
             subject: "",
-            query: currentInput,
             auto_detect_topic: true,
-            difficulty_level: "intermediate"
+            difficulty_level: "intermediate",
+            query: currentInput,
           };
 
           const response = await fetch(CUSTOM_ENDPOINT, {
