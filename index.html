@@ -183,7 +183,7 @@
 
           // Extract the conversation_response from the output object
           console.log('API response data:', responseData);
-          const aiResponseContent = responseData.output?.conversation_response || 'No response received';
+          const aiResponseContent = responseData.conversation_response || 'No response received';
 
           const aiMessage = {
             _id: 'ai-' + Date.now(),
