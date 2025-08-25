@@ -170,8 +170,7 @@
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
-              // Add any authorization headers if needed
-              // 'Authorization': `Bearer ${token}`
+              'ngrok-skip-browser-warning': 'true'
             },
             body: JSON.stringify(customPayload)
           });

@@ -1,0 +1,9 @@
+{
+  "user_id": "12345",
+  "user_type": "student",
+  "request_type": "conversations",
+  "subject": "",
+  "auto_detect_topic": true,
+  "difficulty_level": "intermediate",
+  "query": "Explain python algorithms to me"
+}
